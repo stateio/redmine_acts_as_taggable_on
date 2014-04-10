@@ -4,7 +4,7 @@ class ActsAsTaggableOnMigration < ActiveRecord::Migration
   def self.up
     create_table :tags do |t|
       t.string :name
-      t.inteer :taggings_count, :default => 0
+      t.integer :taggings_count, :default => 0
     end
 
     create_table :taggings do |t|
